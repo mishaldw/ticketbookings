@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+.page1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(/resources/images/pexels-adrien-jacta-5362421-3840x2160-25fps.mp4);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.page2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./pexels-jeremy-bishop-2397653.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.page3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(Sea-Turtle.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.page4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./Green_Sea_Turtle._\(17219615561\).jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.page5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./pexels-apisit-sompong-5257806-2048x948-29fps.mp4);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.page6 {
+    background-image: linear-gradient(rgba(0,0,0,0.575), rgba(0,0,0,0.575)), url(./);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+
+.page7 {
+    background-image: linear-gradient(rgba(0,0,0,0.575), rgba(0,0,0,0.575)), url(./turtles-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+
+nav .logo {
+    margin-top: 20px;
+    padding: 2px 30px;
+}
+
+.back-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (min-aspact-ratio:16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspact-ratio:16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+
+nav li {
+    margin-right: 10px;
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: #080808af;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li ul li {
+    margin: 0px 0;
+}
+
+nav li ul li a {
+    color: rgb(224, 224, 224);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 110px;
+    color: #fff;
+    font-weight: 580;
+    margin-top: 80px;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 8px 50px;
+    border-radius: 50px;
+    margin-top: 130px;
+}
+
+
+/* Main styles */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h1 {
+    font-size: 60px;
+    color: #000000;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Styling for the cards */
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for the images */
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for the card descriptions */
+
+.card .description {
+    padding: 20px;
+}
+
+
+/* Hover effects for the cards */
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.column3 {
+    float: left;
+    width: 50%;
+}
+
+.column3 h1 {
+    font-size: 50px;
+    color: #000000;
+    font-weight: 50;
+    margin-top: 20px;
+}
+
+.main-content2 p {
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+.map {
+    flex-basis: 30%;
+    height: 500px;
+    padding: 10px 110px;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a{
+    color: whitesmoke;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5;
+
+}
+
+.footernav ul li a:hover{
+    opacity: 1;
+}
+
+.footer-bottom{
+    background-color: rgb(135, 135, 135);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100px;
+    background-color: white;
+    border-radius: 1px;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* border: 3px solid green; */
+}

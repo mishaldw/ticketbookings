@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" required>
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" required>
+                <label for="cvc">CVC / CVV</label>
+                <input type="text" id="cvc" required>
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" id="name-on-card" required>
+                <button id="pay-button" disabled>Pay</button>
+              </form>
+        </div>
+        <div class="summary">
+            <h2>Summary Table</h2>
+        <!-- Table to display the summary from local storage -->
+      <div id="summary-table"></div>
+      </div>
+      
+    </div>
+  
+
+
+  <script src="payment.js"></script>
+</body>
+</html>

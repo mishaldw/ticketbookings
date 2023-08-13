@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Page</title>
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+</head>
+<body>
+<div class="page">
+  <div class="section">
+    <div class="cover-page">
+      <h2>Enter Your Details</h2>
+    </div>
+    <form id="details-form">
+      <div class="form-field">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-field">
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" class="intl-tel-input" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="confirm-email">Confirm Email:</label>
+        <input type="email" id="confirm-email" name="confirm-email" required>
+      </div>
+      <div class="form-field">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button id="continue-btn" disabled>Continue with Purchase</button>
+    </form>
+  </div>
+  <div class="summary">
+  <h2>Summary Table</h2>
+  <!-- Table to display the summary from local storage -->
+  <div id="summary-table"></div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+
+  <script src="details.js"></script>
+</body>
+</html>
